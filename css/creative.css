@@ -275,8 +275,9 @@ header.masthead {
 }
 
 .scroll-x {
-overflow-x: scroll;
-overflow-y: hidden;
+	overflow-x: scroll;
+  	overflow-y: hidden;
+  	white-space: nowrap;
 	width: auto;
 	height: 20rem;
 	border: hidden;
@@ -318,7 +319,7 @@ transition: all 0.5s ease;}
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
+	}
 #wrapper.toggled-left #sidebar-wrapper-left {
   width: 250px;
 }
@@ -622,3 +623,121 @@ a.float-left:hover + div.label-container{
   visibility: visible;
   opacity: 1;
 }
+
+
+
+.cards {
+	display: inline-block;
+}
+
+
+
+h2.title {
+  color: #FE980F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 15px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.product-image-wrapper{
+	border:1px solid #F7F7F5;
+	overflow: hidden;
+	margin-bottom:30px;
+}
+
+.single-products {
+	position: relative;
+}
+
+.product-overlay {
+  background:#FE980F;
+  top: 0;
+  height: 0;
+  position: absolute;
+  transition: height 500ms ease 0s;
+  width: 100%;
+  display: block;
+  opacity:inherit;
+}
+
+.single-products:hover .product-overlay {
+  display:block;
+  height:100%;
+}
+
+.product-overlay .overlay-content {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.product-overlay .add-to-cart {
+  background:#fff;
+  border: 0 none;
+  border-radius: 0;
+  color: #FE980F;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.product-overlay .add-to-cart:hover {
+  background:#fff;
+  color: #FE980F;
+}
+
+
+.product-overlay p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+
+
+.add-to-cart {
+  background:#F5F5ED;
+  border: 0 none;
+  border-radius: 0;
+  color: #696763;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.add-to-cart:hover {
+  background: #FE980F;
+  border: 0 none;
+  border-radius: 0;
+  color: #FFFFFF;
+}
+
+.add-to{
+  margin-bottom: 10px;
+}
+
+.add-to-cart i{
+	margin-right:5px;
+}
+
+.add-to-cart:hover {
+  background: #FE980F;
+  color: #FFFFFF;
+}
+
+
+
+.nav-pills {
+	display: inline-block;
+}
+
+.choose {
+	border-top: 1px solid #F7F7F0;
+}
+
